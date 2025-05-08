@@ -261,43 +261,71 @@
                 <div class="mb-4">
                     <h1 class="display-5 text-uppercase mb-4">Let's <span class="text-primary">Connect</span></h1>
                 </div>
-                <p class="mb-5">Got a project in mind, or just want to chat about data? </p>
-                <p>Feel free to reach out. I'm always open to new ideas, collaborations, and challenges that involve turning data into decisions.
+                <p class="mb-5">Got a project in mind, or just want to chat about data? Feel free to reach out—I'm always open to new ideas, collaborations, and challenges that involve turning data into decisions.
                 </p>
                 <a class="btn btn-primary py-3 px-5" href="www.linkedin.com/in/ibraheem-ejamy">Visit LinkedIn</a>
             </div>
             <div class="col-lg-8">
                 <div class="bg-light text-center p-5">
-                    <form>
+                    <form action="https://formspree.io/f/mrbqkwab" method="POST">
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
-                                <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control border-0"
+                                    placeholder="Your Name"
+                                    style="height: 55px;"
+                                    required
+                                >
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    class="form-control border-0"
+                                    placeholder="Your Email"
+                                    style="height: 55px;"
+                                    required
+                                >
                             </div>
                             <div class="col-12 col-sm-6">
-                                <div class="date" id="date" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Call Back Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    class="form-control border-0"
+                                    placeholder="Subject"
+                                    style="height: 55px;"
+                                >
                             </div>
                             <div class="col-12 col-sm-6">
-                                <div class="time" id="time" data-target-input="nearest">
-                                    <input type="text"
-                                        class="form-control border-0 datetimepicker-input"
-                                        placeholder="Call Back Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                </div>
+                                <input
+                                    type="text"
+                                    name="phone"
+                                    class="form-control border-0"
+                                    placeholder="Phone Number (optional)"
+                                    style="height: 55px;"
+                                >
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-0" rows="5" placeholder="Message"></textarea>
+                                <textarea
+                                    name="message"
+                                    class="form-control border-0"
+                                    rows="5"
+                                    placeholder="Message"
+                                    required
+                                ></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Request</button>
+                                <button
+                                    class="btn btn-primary w-100 py-3"
+                                    type="submit"
+                                >
+                                    Send Email
+                                </button>
                             </div>
                         </div>
-                    </form>
+                    </form>                    
                 </div>
             </div>
         </div>
