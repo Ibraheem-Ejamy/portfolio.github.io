@@ -85,19 +85,11 @@
 }
 
 .bg-dark-radial {
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
-    background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
     background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
     background-size: 3px 3px;
 }
 
 .bg-light-radial {
-    background-image: -webkit-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
-    background-image: -moz-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
-    background-image: -ms-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
-    background-image: -o-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
     background-image: repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
     background-size: 3px 3px;
 }
@@ -118,7 +110,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar-dark .navbar-nav .nav-link  {
+    .navbar-dark .navbar-nav .nav-link {
         margin-left: 0;
         padding: 10px 0;
     }
@@ -268,4 +260,159 @@
     left: -40px;
     background: var(--primary);
     transform: skew(40deg);
+}
+
+/* ========================
+   Responsive Enhancements
+   ======================== */
+
+@media (max-width: 768px) {
+    .pt-6, .pb-6, .py-6 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    h1.display-2,
+    h1.display-5 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .carousel-caption .p-3 {
+        padding: 1rem !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 22px !important;
+    }
+
+    .carousel-caption h4 {
+        font-size: 16px !important;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .btn-lg-square,
+    .btn-sm-square,
+    .btn-square {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 20px !important;
+    }
+
+    .portfolio-title {
+        position: static;
+        height: auto;
+        padding: 1rem;
+        background: #fff;
+        margin-top: 15px;
+    }
+
+    .portfolio-btn {
+        position: static;
+        margin: 0 auto;
+        display: block;
+        font-size: 48px;
+        opacity: 1;
+    }
+
+    .portfolio-box::before,
+    .portfolio-box::after {
+        display: none;
+    }
+
+    .service-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-icon {
+        margin-top: -30px !important;
+        width: 70px;
+        height: 70px;
+    }
+
+    .service-icon i {
+        font-size: 28px !important;
+    }
+
+    .footer .row > div {
+        margin-bottom: 30px;
+    }
+
+    .footer-shape::before {
+        display: none;
+    }
+
+    .testimonial .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial .col-xl-4,
+    .testimonial .col-xl-8 {
+        width: 100%;
+    }
+
+    .testimonial img {
+        margin: 0 auto 15px auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .input-group input,
+    .input-group button {
+        font-size: 14px;
+    }
+
+    .display-5 {
+        font-size: 24px;
+    }
+
+    .about-section img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .col-lg-5.pb-5 .position-relative {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .display-5,
+    .display-4,
+    .display-2 {
+        font-size: 22px !important;
+    }
+
+    h4 {
+        font-size: 16px !important;
+    }
+
+    .btn {
+        padding: 8px 12px !important;
+    }
+
+    .form-control {
+        font-size: 14px !important;
+    }
+
+    .footer .navbar-brand h1 {
+        font-size: 22px !important;
+    }
+
+    .carousel-caption .btn {
+        padding: 8px 12px !important;
+    }
 }
