@@ -16,8 +16,33 @@
         }
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
-    });
 
+        // Initialize and sync certificate carousels
+        var leftCarousel = $(".testimonial-left .testimonial-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            items: 1,
+            dots: false,
+            loop: true,
+        });
+
+        var rightCarousel = $(".testimonial-right .testimonial-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            items: 1,
+            dots: false,
+            loop: true,
+        });
+
+        // Sync carousels
+        $(".testimonial-right .testimonial-carousel").on('changed.owl.carousel', function(event) {
+            leftCarousel.trigger('to.owl.carousel', [event.item.index, 1000, true]);
+        });
+
+        $(".testimonial-left .testimonial-carousel").on('changed.owl.carousel', function(event) {
+            rightCarousel.trigger('to.owl.carousel', [event.item.index, 1000, true]);
+        });
+    });
 
     // Date and time picker
     $('.date').datetimepicker({
@@ -52,16 +77,6 @@
         $(this).addClass('active');
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
-        dots: false,
-        loop: true,
     });
     
 })(jQuery);
