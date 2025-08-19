@@ -369,6 +369,16 @@
         height: auto;
     }
 
+    .left-image-carousel .owl-item img {
+        object-fit: contain;
+        height: 100%;
+    }
+
+    .left-image-carousel {
+        min-height: 300px; /* adjust as needed */
+    }
+
+
     .input-group input,
     .input-group button {
         font-size: 14px;
@@ -416,3 +426,4 @@
         padding: 8px 12px !important;
     }
 }
+
