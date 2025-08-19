@@ -63,6 +63,17 @@
         dots: false,
         loop: true,
     });
+
+
+        // Left image carousel
+    $(".left-image-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        items: 1,
+        dots: false,
+        loop: true,
+    });
     
 })(jQuery);
+
 
