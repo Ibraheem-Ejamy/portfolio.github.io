@@ -353,32 +353,6 @@
         display: none;
     }
 
-    /* Testimonial Carousel Sync Styles */
-    .testimonial-left .owl-carousel,
-    .testimonial-right .owl-carousel {
-       position: relative;
-    }
-
-    .testimonial-left .owl-carousel .img-fluid,
-    .testimonial-right .owl-carousel .img-fluid {
-       width: 100%;
-       height: auto;
-       object-fit: cover;
-    }
-
-    .testimonial-left .testimonial {
-       padding: 0;
-    }
- 
-    .testimonial-left .owl-carousel .row {
-       margin: 0;
-    }
-
-    .testimonial-left .owl-carousel .img-fluid {
-       max-height: 500px;
-       object-fit: contain;
-    }
-
     .testimonial .row {
         flex-direction: column;
         text-align: center;
@@ -442,4 +416,3 @@
         padding: 8px 12px !important;
     }
 }
-
